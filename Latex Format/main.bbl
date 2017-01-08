@@ -1,0 +1,62 @@
+\begin{thebibliography}{10}
+
+\bibitem{afyouni2012spatial}
+{\sc Afyouni, I., Cyril, R., and Christophe, C.}
+\newblock Spatial models for context-aware indoor navigation systems: A survey.
+\newblock {\em Journal of Spatial Information Science 1}, 4 (2012), 85--123.
+
+\bibitem{alamri2014adjacency}
+{\sc Alamri, S.~M.}
+\newblock {\em Adjacency-based indexing for moving objects in spatial
+  databases}.
+\newblock PhD thesis, Monash University. Faculty of Information Technology.
+  Clayton School of Information Technology, 2014.
+
+\bibitem{chopde2013landmark}
+{\sc Chopde, N.~R., and Nichat, M.}
+\newblock Landmark based shortest path detection by using a* and haversine
+  formula.
+\newblock {\em International Journal of Innovative Research in Computer and
+  Communication Engineering 1}, 2 (2013), 298--302.
+
+\bibitem{gotlib2012research}
+{\sc Gotlib, D., Gnat, M., and Marciniak, J.}
+\newblock The research on cartographical indoor presentation and indoor route
+  modeling for navigation applications.
+\newblock In {\em Indoor Positioning and Indoor Navigation (IPIN), 2012
+  International Conference on\/} (2012), IEEE, pp.~1--7.
+
+\bibitem{guting1994introduction}
+{\sc G{\"u}ting, R.~H.}
+\newblock An introduction to spatial database systems.
+\newblock {\em The VLDB Journal—The International Journal on Very Large Data
+  Bases 3}, 4 (1994), 357--399.
+
+\bibitem{han2014design}
+{\sc Han, L., Zhang, T., and Wang, Z.}
+\newblock The design and development of indoor 3d routing system.
+\newblock {\em Journal of Software 9}, 5 (2014), 1223--1228.
+
+\bibitem{karimi2011universal}
+{\sc Karimi, H.~A.}
+\newblock {\em Universal navigation on smartphones}.
+\newblock Springer Science \& Business Media, 2011.
+
+\bibitem{magzhan2013review}
+{\sc Magzhan, K., and Jani, H.~M.}
+\newblock A review and evaluations of shortest path algorithms.
+\newblock {\em International journal of scientific \& technology research 2}, 6
+  (2013).
+
+\bibitem{okabe2009spatial}
+{\sc Okabe, A., Boots, B., Sugihara, K., and Chiu, S.~N.}
+\newblock {\em Spatial tessellations: concepts and applications of Voronoi
+  diagrams}, vol.~501.
+\newblock John Wiley \& Sons, 2009.
+
+\bibitem{sathyaraj2008multiple}
+{\sc Sathyaraj, B.~M., Jain, L.~C., Finn, A., and Drake, S.}
+\newblock Multiple uavs path planning algorithms: a comparative study.
+\newblock {\em Fuzzy Optimization and Decision Making 7}, 3 (2008), 257--267.
+
+\end{thebibliography}

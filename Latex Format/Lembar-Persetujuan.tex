@@ -1,0 +1,54 @@
+{\centering
+\iflogTA
+\textbf{\large Approval Sheet}\\  %UNTUK TA
+\else
+\textbf{\large Lembar Persetujuan}\\
+\fi
+\vspace{0.5cm}
+%\textbf{\Title}\\
+\vspace{0.5cm}
+\textbf{\textit{\EngTitle}}\\
+\vspace{0.5cm}
+\textbf{\Author}\\
+\textbf{NIM: \NIM}\\
+\vspace{1cm}
+
+\iflogTA 
+{ This final project has been accepted and approved to fulfill most of the requirements to obtain a Bachelor's Degree of \Prodi \\ School of Computing \\ Telkom University}\\  %% UNTUK TA
+\else
+{ Proposal ini diajukan sebagai usulan pembuatan tugas akhir pada\\ Program Studi Sarjana \Prodi\\ Fakultas Informatika \\ Universitas Telkom}\\
+\fi
+\vspace{0.5cm}
+
+{Bandung, \Bulan \quad \Tanggal  \quad \Date}\\
+{Signed by,}\\
+
+\vspace{0.5cm}
+\iflogTA
+\begin{center}
+\begin{tabular}{  m{8cm}  m{8cm} }
+Supervisor 1 & Supervisor 2
+\end{tabular}
+\end{center}
+\else
+\begin{center}
+\begin{tabular}{  m{8cm}  m{8cm} }
+Calon Pembimbing 1 & Calon Pembimbing 2
+\end{tabular}
+\end{center}
+\fi
+\begin{center}
+\vspace{2cm}
+\begin{tabular}{  m{8cm}  m{8cm} }
+\underline{\PembimbingSatu} & \underline{\PembimbingDua} \\ 
+NIP: \NIPPembimbingSatu & %NIP: \NIPPembimbingDua
+\end{tabular}
+\end{center}
+\vspace{0.5cm}
+\iflogTA
+Approved by,\\   %% UNTUK TA
+Head of Undergraduate\\ %% UNTUK TA
+\vspace{2.5cm}   %% UNTUK TA
+\underline{\Kaprodi}\\ NIP: \NIPKaprodi\\  %% UNTUK TA
+\fi
+}

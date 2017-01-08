@@ -1,0 +1,94 @@
+\chapter{Introduction}
+\section{Overview}
+In recent years, a navigation system or outdoor routing systems like Google Maps is become very beneficial, especially for people who travels alot without knowing the direction to go towards their destination place \cite{gotlib2012research}. Later, this navigation system is also implemented in a smaller area, like mapping on indoor spaces. With the indoor mapping system, someone will be facilitated in finding the target location\cite{han2014design}. Indoor routing application is pretty much grown abroad for certain places such as malls, airports, offices, etc. However in Indonesia, the majority still use manual mapping system by displaying a room map plan in the building.
+There are significant differences that make indoor routing more complex than outdoor routing, which is on the outdoor routing generally implemented in two dimensional space, while at the indoor routing allows the routing of the three dimensional space that represent multi-storey building \cite{han2014design}. This is a challenge in constructing indoor routing system, how to represent indoor spaces in a building? A building may have a number of rooms and the number of corridors. From every room allows for a variety of door that connect the room with another spaces. And the buildings can be a multi-storey building that has stairs, lifts, or elevators to move from one level to another level. The entire space must have identified labels as well as connectivity between the spaces. Three dimentional spaces can be a solution to build the system's indoor routing. This method will identify an object accurately by storing geographic data are represented to form undirected graph or graph is not directed to the attributes of the data of three-dimensional x, y, and z, where x and y are the coordinates of a point, and z represents the height level point the \cite{alamri2014adjacency}. 
+In this thesis, indoor routing by using a three-dimensional representation spaces construction will be implemented for the case study the buildings of the Faculty of Informatics of Telkom University. This system is expected to provide optimal service that can be taken to achieve the intended room.
+
+
+\section{Major Challange}
+Based on the background described above, problems can be formulated as follows:
+\begin{enumerate}
+    \item How does the representation of three dimensional spaces can be implemented to build a data structure of the buildings of Faculty of Informatics, Telkom Universty?
+    \item How to implement indoor routing in three dimensional spaces?
+    \item How does the performance of the indoor routing system using three dimensional spaces?
+\end{enumerate}
+\section{Objectives}
+The objectives to be achieved in this final project are:
+\begin{enumerate}
+    \item Finding out how the representation of three dimensional spaces can be implemented to build a data structure of the buildings of Faculty of Informatics Engineering, Telkom University.
+    \item Finding out how indoor routing can be implemented in three dimensional spaces.
+    \item Finding out how the performance of the indoor routing system using three dimentional spaces.
+\end{enumerate}
+\section{Scope}
+The scopes of this final project are:
+\begin{enumerate}
+	\item Graph representation of data that used in this final project is the undirected graph.
+	\item The route chosen is the shortest route with two options, the shortest route in general and the enclosed one (roofed overall). If the enclosed route is not found, it raised only the shortest route.
+	\item The data set used is the Faculty of Computer Science, Telkom University’s spatial data (only along D, E, and F buildings).
+\end{enumerate}
+\section{Hypothesis}
+Three dimensional spaces is a method for representing spatial data. The routing system method by applying two-dimensional space should also apply to three dimensional space. The system will be able to receive two inputs, the first input is the location of starting point and the second input is the destination point. The system would then output the shortest route from those points. There are two kind of shortest route that will be outputted, the shortest route in general and the enclosed one. If the enclosed route is not found, it raised only the shortest route.
+\section{Methodology}
+The settlement method will be used to complete this final projet are:
+\begin{enumerate}
+	\item 
+	Literature Study
+	
+	Studying the literature that can be used as a reference regarding Indoor Routing with three dimensional spaces.
+	\item 
+	Data Collecting and Analysis
+	
+	Authors collected the dataset that will be used to implement the three dimentional spaces for Indoor Routing. At this stage, there will be labeling on every point included in the dataset.
+	\item 
+	System Model Development 
+	
+	This stage includes needs analysis, development analysis, and modeling indoor routing system with arithmetic models.
+	\item 
+	System Development
+	
+	This stage includes the development of software in accordance with the design of the previous stage.
+	\item 
+	System Testing
+	
+	Perform testing of the system in terms of accuracy and performance of the system.
+	\item 
+	Analysis and Conclusions
+	
+	Analyzing the results of the accuracy of three dimensional spaces construction.
+\end{enumerate}
+
+\section{Summary}
+This chapter is about the fundamental of what this final project about. From the problems stated above, this final project offer a solution. Again, the main problem is how to build the suitable data structure for indoor routing system. This final project offers to use three dimensional data structure as a solution. 
+
+\iflogTA
+\else
+\section{Schedule}
+The table \ref{table:1} is an example of referenced \LaTeX elements. Laporan proposal ini akan dijadwalkan sesuai dengan tabel yang diberikna berikutnya. 
+
+ 
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|c|m{2.5cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|}
+    \hline
+    \multirow{2}{*}{\textbf{No}} & \multirow{2}{*}{\textbf{Kegiatan}} & \multicolumn{24}{|c|}{\textbf{Bulan ke-}} \\
+    \hhline{~~------------------------}
+    {} & {} & \multicolumn{4}{|c|}{\textbf{1}} & \multicolumn{4}{|c|}{\textbf{2}} & \multicolumn{4}{|c|}{\textbf{3}} & \multicolumn{4}{|c|}{\textbf{4}} & \multicolumn{4}{|c|}{\textbf{5}} & \multicolumn{4}{|c|}{\textbf{6}}\\
+    \hline
+    1 & Studi Literatur & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}\\
+    \hline
+    2 & Pengumpulan Data & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & {} & {} & {} & {} & {} & {} & {} & {}& {} & {} & {} & {}& {} & {} & {} & {}& {} & {} & {} & {}\\
+    \hline
+    3 & Analisis dan Perancangan Sistem &  {} & {} & {} & {}  & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & {} & {} & {} & {}& {} & {} & {} & {}& {} & {} & {} & {}\\
+    \hline
+    4 & Implementasi Sistem &  {} & {} & {} & {} & {} & {} & {} & {}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & {} & {} & {} & {}& {} & {} & {} & {}\\
+    \hline
+    5 & Analisa Hasil Implementasi &  {} & {} & {} & {} & {} & {} & {} & {}& {} & {} & {} & {} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & {} & {} & {} & {}\\
+    \hline
+    6 & Penulisan Laporan & {} & {} & {} & {} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}\\
+    \hline
+  \end{tabular}
+  \caption{Final Project Schedule}
+  \label{table:1}
+\end{table}
+
+\fi
