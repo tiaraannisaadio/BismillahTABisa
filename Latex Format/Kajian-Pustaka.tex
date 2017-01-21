@@ -1,9 +1,9 @@
 \chapter{Literature Review}
 
 \section{Spatial Database}
-Spatial database is a database designed to store and process data with spatial data types such as point, line, or region contained in Geographic Information System (GIS). Spatial data can be utilized on a two dimensional appearance as the appearance of the earth's surface, or the appearance of three dimensions, such as modeling the human brain, the protein molecule chains, etc. After the systems of relational database developed, the system of other databases become developed then, one of it is the spatial database. Characteristics of spatial database needed is a system that is able to accommodate simple geometric objects data with a huge amount to accommodate as 100,000 polygons.
+Spatial database is a database designed to store and process data with spatial data types such as point, line, or region contained in Geographic Information System (GIS). Spatial data can be utilized on a two dimensional appearance such as the appearance of the earth's surface, or the appearance of three dimensions, such as modeling the human brain, the protein molecule chains, etc. After the systems of relational database developed, the system of other databases become developed then, one of it is the spatial database. Characteristics of spatial database needed is a system that is able to accommodate simple geometric objects data with a huge amount to accommodate as much as 100,000 polygons.
 
-Spatial database system is gaining popularity in recent years, especially at a "Symposium on Large Spatial Databases (SSD)" held biennially since 1898 associated with the database that stores the object in space as a supporter of space images \cite{okabe2009spatial}.
+Spatial database system is gaining popularity in recent years, especially at the "Symposium on Large Spatial Databases (SSD)" held biennially since 1989 associated with the database that stores the object in space as a supporter of space images \cite{okabe2009spatial}.
 \subsection{Data Representation}
 As mentioned previously, spatial data can be represented by a point, line, or region. For example, a city can be modeled as a set of points that describe a large geographical area. A line usually used to represent the connections in space such as roads, rivers, telephone cables, electricity, etc. An object representing the area or region that has a limit in two-dimensional space, such as the state, lakes, etc. Figure 2.1 is a basic representation of an image on a spatial database, which is the point, line, and area.
 \begin{figure}[h!]
@@ -34,27 +34,27 @@ Outdoor routing technology is now highly developed. Figure 2.3 describes the flo
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.7]{figure3.png}
-	\caption{The information flow on outdoor navigation systems}
+	\caption{The information flow on outdoor navigation systems \cite{karimi2011universal}}
 	\label{fig:figure3}
 \end{figure}
 
-From Figure 2.3, the user's position is determined by: (a) obtaining position data through geo-positioning sensor and (b) applying the map matching algorithm using position data obtained. These steps are general steps to improve the accuracy, availability, and reliability of outdoor navigation system by using more than one geo-positioning sensor in which each of the position data can be filtered using a Kalman filter to find the best position estimation. Furthermore, the position data that has been filtered out will be input to the map matching algorithm that uses a database map for traveling the area, which contains spatial and non-spatial to find: (a) roads / pavements where users are located and (b) the location right of user in the segment.
+From Figure \ref{fig:figure3}, the user's position is determined by: (a) obtaining position data through geo-positioning sensor and (b) applying the map matching algorithm using position data obtained. These steps are general steps to improve the accuracy, availability, and reliability of outdoor navigation system by using more than one geo-positioning sensor in which each of the position data can be filtered using Kalman filter to find the best position estimation. Furthermore, the position data that has been filtered out will be inserted to the map matching algorithm that uses a database map for traveling the area, which contains spatial and non-spatial to find: (a) roads / pavements where users are located and (b) the location right of user in the segment.
 
-When the user's location is known, the locations will be marked in the map and displayed to the user. At this stage, the system is currently tracking, and users have the option to search for POIs or a request for an optimal route between the pair of addresses. The system uses a search using the shortest or fastest route criteria\cite{karimi2011universal}. Figure 2.4 is an example of outdoor routing system implementation.
+When the user's location is known, the locations will be marked in the map and displayed to the user. At this stage, the system is currently tracking, and users have the option to search for POIs or a request for an optimal route between the pair of addresses. The system uses a search using the shortest or fastest route criteria \cite{karimi2011universal}. Figure \ref{fig:figure4} is an example of outdoor routing system implementation.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.7]{figure4a.png}
+	\includegraphics[scale=0.4]{figure4a.png}
 	\caption{Examples of outdoor routing implementation}
 	\label{fig:figure4}
 \end{figure}
 
 \subsection{Indoor Routing}
-Indoor routing is a routing system implementation in the room or building. By using spatial data, each space can be accurately identified. There are various kinds of elements in indoor spaces such as rooms, doors, corridors, floors, stairs, elevators, and the road connection between buildings. Indoor spaces are represented by undirected graph with nodes and edges. The concept of modeling the indoor spaces can be summarized in Table 2.1.
+Indoor routing system is a routing system implementation in the building. By using spatial data, each space can be accurately identified. There are various kinds of elements in indoor spaces such as rooms, doors, corridors, floors, stairs, elevators, and the road connection between buildings. Indoor spaces are represented by undirected graph with nodes and edges. The concept of modeling the indoor spaces can be summarized in Table \ref{indoor-concept-table}.
 
 \begin{table}[h!]
 	\centering
-	\caption{The concept of indoor spaces modeling} %\ref{fig:figure9}}
+	\caption{The concept of indoor spaces modeling \cite{alamri2014adjacency}} %\ref{fig:figure9}}
 	\label{indoor-concept-table}
 	\begin{tabular}{|l|l|l}
 		\cline{1-2}
@@ -68,12 +68,12 @@ Indoor routing is a routing system implementation in the room or building. By us
 	\end{tabular}
 \end{table}
 
-As an illustration, Figure 2.5 is a graph modeling the indoor spaces delineated by one level.
+As an illustration, Figure \ref{fig:figure5} is a graph modeling the indoor spaces delineated by one level.
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.6]{figure5a.png}
-	\caption{Modeling indoor spaces with a graph of the level }
+	\caption{Modeling indoor spaces with a graph of the level \cite{alamri2014adjacency}}
 	\label{fig:figure5}
 \end{figure}
 
@@ -81,12 +81,11 @@ From the illustration, it can be seen that C10, C9, C8, C7, C4, C6, C5, C3, C2 a
 \begin{enumerate}
 	\item An indoor space is a connected undirected graph (Cells, Edges), where Cells = {C1, C2, ..., Cn} is a set of cells, and Edges = {E1, E2, . . . , Em} is set of edges, each of which is a set of two cells, that is, each edge connects two distinct cells. 
 	\item (Adjacent Nodes) Let G = (N,C) be a graph, and two Nodes n1,n2 $\in$ N of G are adjacent if: $\exists$ n1,n2 are connected.
-	\item (Multidimensional Connectivity Graph) Given a set of cells Ci , Cj , Cf , Cl in the ground floor and a set of cells Cx, Cy,Cr, Ct the multidimensional connectivity graph refers to the multiple edges that connect the single floor cells and the above cells in the multi-floor space\cite{alamri2014adjacency}.
+	\item (Multidimensional Connectivity Graph) Given a set of cells Ci , Cj , Cf , Cl in the ground floor and a set of cells Cx, Cy,Cr, Ct the multidimensional connectivity graph refers to the multiple edges that connect the single floor cells and the above cells in the multi-floor space \cite{alamri2014adjacency}.
 \end{enumerate}	 
 
 \section{Shortest Path Algorithms}
-There are several algorithms that the accuration and time complexity have been tested to calculate the shortest distance between nodes on a graph, like Djikstra algorithm, Floyd-Warshall, Bellman-Ford, and Genetic Algorithm (GA). Here are the description of each algorithms.
-
+There are several algorithms that the accuration and time complexity have been tested to calculate the shortest distance between nodes on a graph, like Dijkstra's and A* algorithms.
 \subsection{Dijkstra's Algorithm}
 For each vertex within a graph we assign a label that determines the minimal length from the starting point $s$ to other vertices $v$ of the graph. In a computer we can do it by declaring an array $d[]$. The algorithm works sequentially, and in each step it tries to decrease the value of the label of the vertices. The algorithm stops when all vertices have been visited. The label at the starting point $s$ is equal to zero $(d[s] = 0)$; however, labels in other vertices $v$ are equal to infinity $(d[v] =\infty)$, which means that the length from the starting point $s$ to other vertices is unknown. In a computer we can just use a very big number in order to represent infinity. In addition, for each vertex $v$ we have to identify whether it has been visited or not. In order to do that, we declare an array of Boolean type called $u[v]$, where initially, all vertices are assigned as unvisited $(u[v] = false)$. The Dijkstra’s algorithm consists of $n$ iterations. If all vertices have been visited, then the algorithm finishes. Otherwise, from the list of unvisited vertices we have to choose the vertex which has the minimum (smallest) value at its label (At the beginning, we will choose a starting point $s$). After that, we will consider all neighbors of this vertex (Neighbors of a vertex are those vertices that have common edges with the initial vertex). For each unvisited neighbor we will consider a new length, which is equal to the sum of the label’s value at the initial vertex $v (d[v])$ and the length of edge $l$ that connects them. If the resulting value is less than the value at the label, then we have to change the value in that label with the newly obtained value\cite{magzhan2013review}.
 \begin{equation}\label{finding-minimum-neighbour-in-dijkstra}
@@ -99,7 +98,7 @@ After considering all of the neighbors, we will assign the initial vertex as vis
 P = ( s , … , p [ p [ p [ v ] ] ] , p [ p [ v ] ] , p [ v ] , v )	
 \end{equation}
 
-Figure \ref{fig:figure6} is an implementation of Dijkstra's algorithm using the Java programming language.
+Figure \ref{fig:figure6} is the pseudocode of Dijkstra's algorithm.
 
 \begin{figure}[h!]
 	\centering
@@ -109,7 +108,7 @@ Figure \ref{fig:figure6} is an implementation of Dijkstra's algorithm using the 
 \end{figure}
 
 \subsection{Floyd-Warshall Algorithm}
-Consider the graph $G$, where vertices were numbered from 1 to $n$. The notation dijk means the shortest path from $i$ to $j$, which also passes through vertex $k$. Obviously if there is exists edge between vertices $i$ and $j$ it will be equal to $d_{ij0}$, otherwise it can assigned as infinity. However, for other values of dijk there can be two choices: (1) If the shortest path from $i$ to $j$ does not pass through the vertex $k$ then value of $d_{ijk}$ will be equal to $d_{ijk- 1}$. (2) If the shortest path from $i$ to $j$ passes through the vertex $k$ then first it goes from $i$ to $k$, after that goes from $k$ to $j$. In this case the value of $d_{ijk}$ will be equal to $d_{ikk-1} + d_{kjk-1}$. And in order to determine the shortest path we just need to find the minimum of these two statements:
+Figure \ref{fig:figure7} is the pseudocode of Floyd-Warshall algorithm. Consider the graph $G$, where vertices were numbered from 1 to $n$. The notation dijk means the shortest path from $i$ to $j$, which also passes through vertex $k$. Obviously if there is exists edge between vertices $i$ and $j$ it will be equal to $d_{ij0}$, otherwise it can assigned as infinity. However, for other values of dijk there can be two choices: (1) If the shortest path from $i$ to $j$ does not pass through the vertex $k$ then value of $d_{ijk}$ will be equal to $d_{ijk- 1}$. (2) If the shortest path from $i$ to $j$ passes through the vertex $k$ then first it goes from $i$ to $k$, after that goes from $k$ to $j$. In this case the value of $d_{ijk}$ will be equal to $d_{ikk-1} + d_{kjk-1}$. And in order to determine the shortest path we just need to find the minimum of these two statements:
 
 
 \begin{equation}\label{length-between-i-j}
@@ -130,7 +129,7 @@ Consider the graph $G$, where vertices were numbered from 1 to $n$. The notation
 \subsection{Bellman-Ford Algorithm}
 In comparison to Dijkstra’s algorithm, the Bellman-Ford algorithm admits or acknowledges the edges with negative weights. That is why, a graph can contain cycles of negative weights, which will generate numerous number of paths from the starting point to the final destination, where each cycle will minimize the length of the shortest path. Taking into consideration this fact, let’s assume that our graph does not contain cycles with negative weights. The array $d[]$ will store the minimal length from the starting point $s$ to other vertices. The algorithm consists of several phases, where in each phase it needs to minimize the value of all edges by replacing $d[b]$ to following statement $d[a] + c; a$ and $b$ are vertices of the graph, and $c$ is the corresponding edge that connects them. And in order to calculate the length of all shortest paths in a graph it requires $n – 1$ phases, but for those vertices of a graph that are unreachable, the value of elements of the array will remain by being assigned to infinity \cite{magzhan2013review}.
 
-Figure 2.9 is the Bellman-Ford algorithm implementation using the Java programming language.
+Figure 2.9 is the pseudocode of Bellman-Ford algorithm.
  
 \begin{figure}[h!]
 	\centering
@@ -148,7 +147,7 @@ This heuristic search ranks each node by an estimate of the best route that goes
 f(n) = g(n) + h(n)	
 \end{equation}
 
-where $f(n)$ is the score assigned to node $n$, this is the estimate of the best solution that goes through $n, g(n)$ is the actual cheapest cost of arriving at from the start node to $n$ and $h(n)$ is the heuristic estimate of the cost to the goal from $n$ (Fig. 7).
+where $f(n)$ is the score assigned to node $n$, this is the estimate of the best solution that goes through $n, g(n)$ is the actual cheapest cost of arriving at from the start node to $n$ and $h(n)$ is the heuristic estimate of the cost to the goal from $n$. Figure \ref{fig:figure9} is the pseudocode of A* algorithm.
 
 \begin{figure}[h!]
 	\centering
@@ -158,12 +157,12 @@ where $f(n)$ is the score assigned to node $n$, this is the estimate of the best
 \end{figure}
 
 \section{Three Dimensional Spaces}
-If a rubber ball thrown vertically from the floor, the ball will have a unique coordinate axes. Figure 2.10 is an illustration of the movement of a rubber ball thrown vertically. For example, a spherical coordinate to the axis of the two-dimensional space (in this case on the floor) is (5, 4) and the high ball as reflected by the floor is 2.5 cm, then the spherical coordinates into (5.4, 2.5). Each position of the vertical movement of the ball is a unique three dimensional space coordinates. 
+Look at the example on Figure \ref{fig:figure10}. That is the picture of how the three dimensional spaces could be implement in representing the buildings. As you can see here, a building could be not just in one level, but it also could be a multi-level building. In this final project, each nodes of rooms, stairs, corridors will have its own three dimnesional attribute. $x$ attribute is the longitude coordinate in decimal, $y$ attribute is the latitude coordinate also in decimal. and $z$ attribute is the heigh or floor level of the building wich is in ordinal form.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=1]{figure10.png}
-	\caption{Illustration of Rubber Ball Movement}
+	\includegraphics[scale=0.5]{figure10.png}
+	\caption{Illustration of three dimensional spaces}
 	\label{fig:figure10}
 \end{figure}
 

@@ -25,6 +25,7 @@
 \usepackage{etoolbox}
 \usepackage{subcaption}
 \usepackage{caption}
+%\usepackage[toc,page]{appendix}
 
 \makeatletter
 \patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
@@ -85,9 +86,9 @@
 \newcommand{\Bulan}{January} % Bulan Pengesahan
 \newcommand{\PembimbingSatu}{Kiki Maulana Adhinugraha, Ph.D.}
 \newcommand{\NIPPembimbingSatu}{06800352-1}
-\newcommand{\PembimbingDua}{Sultan Mofareh Alamri, PhD.}
+\newcommand{\PembimbingDua}{Sultan Mofareh Alamri, Ph.D.}
 \newcommand{\NIPPembimbingDua}{}
-\newcommand{\Kaprodi}{Arif Bijaksana, Ph.d}
+\newcommand{\Kaprodi}{Dr. Moch. Arif Bijaksana, Ir. M. Tech. Ph.D.}
 \newcommand{\NIPKaprodi}{95650581-1}
 \newif\iflogTA
 \logTAtrue   %%%%%% WARNING kode ini diaktifkan untuk format TUGAS AKHIR
@@ -151,14 +152,16 @@
 %
 \include{Kesimpulan}
 %
-\cleardoublepage
+%\cleardoublepage
 \addcontentsline{toc}{chapter}{Bibliography}
 
 \bibliographystyle{acm} %harvard style
 \bibliography{References}
 %
 %\pagebreak
-\cleardoublepage
-\addcontentsline{toc}{chapter}{Attachment}
+%\cleardoublepage
+\renewcommand\thesection{\Alph{section}}
+\renewcommand\thesubsection{\thesection.\Alph{subsection}}
+\addcontentsline{toc}{chapter}{Appendices}
 \include{Lampiran}
 \end{document}

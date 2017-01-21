@@ -3,13 +3,22 @@
 After the implementation, testing, and analyzing process have been done, it could be concluded that:
 \begin{enumerate}
 	\item Indoor Routing System could be implemented using three dimensional spaces.
+	
 	\item The most suitable Shortest Path Algorithm to the three dimensional spaces data between Dijkstra, Floyd-Warshall, Bellman-Ford, and A* Algorithms is A* Algorithm that give the smallest value of execution time.
-	  
+	
+	\item Floyd-Warshall and Bellman-Ford algorithms are not yet can be implemented in this case because Floyd–Warshall algorithm solves all pairs shortest distance, Bellman–Ford algorithm solves the single-source problem if edge weights may be negative, and both algorithms are not resulting the path but just the shortest distance value. Modification of these algorithms may could make it work.
+	
+	\item This System still lack of resulting the exact distance after it compared with the distance in real life. There are a few reason of this lackness such as the process in getting the nodes’ coordinate is still not accurate enough and for buildings that have a bit length of stairs to connect to the outter space, it assumed as one heigh level, so there will be a little bit difference between the calculation result and the measurement result. In this case, the calculation result could be called as an APPROXIMATE DISTANCE.
+	
 \end{enumerate}
+
+\vspace{40mm}
 \section{Future Work}
 Since this final project have been done, there are a few recommendations to make this project better, those are:
 \begin{enumerate}
 	\item Add some more dataset until the whole area of Telkom University. After that, it could be published in college's website so this system could be used for everyone.
 	\item Find another better way to get the exact longitude and latitude for the points. One of the examples is take a long walk from points to points and record the Longitude and Latitude coordinates.
 	\item It would be better if the graph could be viewed with the 3D blueprints of the buildings. 
+	\item Try to implement hub labeling algorithm to get the shortest path. 
+	
 \end{enumerate}

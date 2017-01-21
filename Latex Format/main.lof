@@ -3,28 +3,41 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Three basic spatial representations: points, lines, areas\relax }}{4}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Partitions and networks\relax }}{5}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces The information flow on outdoor navigation systems\relax }}{6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The information flow on outdoor navigation systems \cite {karimi2011universal}\relax }}{6}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Examples of outdoor routing implementation\relax }}{6}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Modeling indoor spaces with a graph of the level \relax }}{7}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Modeling indoor spaces with a graph of the level \cite {alamri2014adjacency}\relax }}{7}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Dijkstra's algorithm pseudocode\relax }}{9}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Floyd-Warshall algorithm pseudocode\relax }}{9}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Floyd-Warshall algorithm pseudocode\relax }}{10}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Bellman-Ford algorithm pseudocode\relax }}{10}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces A* algorithm pseudocode\relax }}{11}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Illustration of Rubber Ball Movement\relax }}{12}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Illustration of three dimensional spaces\relax }}{12}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Ilustration of distance between two points on a Three Dimensional Spaces\relax }}{12}
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Ilustration of distance between two rooms\relax }}{13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Relational table of dataset\relax }}{15}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces System Flow Chart\relax }}{16}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Telkom University area\relax }}{17}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Telkom University area\relax }}{18}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces 2D system's graph modeling\relax }}{19}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces 3D system's graph modeling\relax }}{19}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces The close space shortest path\relax }}{20}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces The shortest path\relax }}{21}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Relational table of dataset\relax }}{16}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces System Flow Chart\relax }}{17}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Telkom University area\relax }}{18}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Telkom University area\relax }}{19}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 2D system's graph modeling\relax }}{20}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces 3D system's graph modeling\relax }}{20}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Graph legend\relax }}{21}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces The close space shortest path\relax }}{21}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces The shortest path\relax }}{22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Execution Time Comparison for Whole Space\relax }}{29}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Execution Time Comparison for Whole Space\relax }}{30}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Execution Time Comparison for Close Space Only\relax }}{30}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Execution Time Comparison in System \relax }}{30}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Distance deviation testing result \relax }}{31}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Smaller graph example \relax }}{31}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Dijkstra's Algorithm pseudocode \relax }}{31}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Floyd-Warshall Algorithm pseudocode \relax }}{32}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Bellman-Ford Algorithm pseudocode \relax }}{33}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces A* Algorithm pseudocode \relax }}{34}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces A* Algorithm output \relax }}{34}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Distance deviation testing result for shortest path \relax }}{36}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Distance deviation testing result for close shortest path \relax }}{36}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {0.1}{\ignorespaces Example of building database (total 3 data) \relax }}{42}
+\contentsline {figure}{\numberline {0.2}{\ignorespaces Example of corridor database (total 168 data) \relax }}{42}
+\contentsline {figure}{\numberline {0.3}{\ignorespaces Example of room database (total 83 data) \relax }}{43}
+\contentsline {figure}{\numberline {0.4}{\ignorespaces Example of segment database (total 283 data) \relax }}{43}
+\contentsline {figure}{\numberline {0.5}{\ignorespaces Example of stair database (total 21 data) \relax }}{43}
